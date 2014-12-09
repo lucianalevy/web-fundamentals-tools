@@ -5,15 +5,17 @@
 	<title>HTML5 Boot Camp</title>
 </head>
 <body>
-	<div>
+	<header>
 		<img src="https://raw.githubusercontent.com/nuriasuarez/startup/master/00-HTML-CSS-basics/img/logo.png" alt="Bootcamp Logo">
-		<ul>
-			<li><a href="#" title="HTML">HTML</a></li>
-			<li><a href="#" title="CSS">CSS</a></li>
-			<li><a href="#" title="Javascript"></a>Javascript</a></li>
-		</ul>
-	</div>
-	<div>
+		<nav>
+			<ul>
+				<li class="html"><a href="#" title="HTML">HTML</a></li>
+				<li class="css"><a href="#" title="CSS">CSS</a></li>
+				<li class="js"><a href="#" title="Javascript">Javascript</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
 		<h1>HTML5 Boot Camp</h1>
 		<p>Building Mobile Web Experiences</p>
 		<p>This course teaches the basics of modern Web UI development which enables the creation of best of breed user experiences, gaming, and mobile applications.</p>
@@ -23,8 +25,18 @@
 			<li>HTML,</li>
 			<li>and CSS</li>
 		</ul>
-	</div>
-	<div>
+	</section>
+	
+	<section>
+		<h2>Register</h2>
+		<form action="" method="post" id="register">
+			<label for="name">Name</label><input type="text" name="name" id="name"  placeholder="Guibert Englebienne" required />
+			<label for="email">Email address</label><input type="email" name="email" id="email"  placeholder="user.name@globant.com" />
+			<label for="phone">Telephone</label><input type="tel" name="tel" id="tel"  placeholder="(555) 555-5555" pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$" />
+			<input type="submit" id="signup" value="Sign up" />
+		</form>
+	</section>
+	<section>
 		<h2>What will I learn</h2>
 		<div>
 			<img src="https://raw.githubusercontent.com/nuriasuarez/startup/master/00-HTML-CSS-basics/img/html5.png" alt="HTML Image">
@@ -37,21 +49,26 @@
 			<li>understand how to structure HTML documents, and what the basic building blocks are</li>
 			<li>use the tools you need to develop faster</li>
 		</ul>
-	</div>
-	<div>
+		<video width="320" height="240" controls>
+			<source src="movie.mp4" type="video/mp4">
+			<source src="movie.ogg" type="video/ogg">
+		Your browser does not support the video tag.
+		</video>
+	</section>
+	<section>
 		<h2>Who Should Attend?</h2>
 		<p>The training will start at a low level and does not require in depth knowledge of the platform in question. Desirable participant profile: trainees and outside Globant candidates. A basic knowledge on HTML, CSS, and JavaScript is desired, though.</p>
-	</div>
-	<div>
+	</section>
+	<section>
 		<h2>Tools</h2>
 		<p>List of tools what you need in your development toolkit to build an experience that works great on any device:</p>
 		<ol>
 			<li><a href="https://github.com/" title="Github">GitHub</a>: is an open source version control system (VCS)</li>
 			<li><a href="http://www.sublimetext.com/" title="Sublime">Sublime</a>: Text editor</li>
 		</ol>
-	</div>		
-	<div>
+	</section>		
+	<footer>
 		<p>We always need a footer.</p>
-	</div>
+	</footer>
 </body>
 </html>
